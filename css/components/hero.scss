@@ -1,0 +1,35 @@
+.hero {
+    background: url(/img/decor/headphones.png) left 65% center no-repeat;
+    background-color: #F5F5F5;
+    height: 100vh;
+    min-height: 650px;
+    color: $black;
+}
+
+.hero__title-section {
+    width: 46%;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 66px 0;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    font-family: "Play", Helvetica, sans-serif;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 54px;
+    padding-right: 10%;
+}
