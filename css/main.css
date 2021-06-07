@@ -75,7 +75,7 @@ img {
 }
 
 .hero {
-  background: url(/img/decor/headphones.png) left 65% center no-repeat;
+  background: url(img/decor/headphones.png) left 65% center no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
   min-height: 650px;
@@ -253,7 +253,7 @@ img {
 }
 
 .section-map {
-  background: url(/img/map.png) center center/cover no-repeat;
+  background: url(img/map.png) center center/cover no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -289,7 +289,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url(/img/decor-elem/Combined.png);
+  content: url(img/decor-elem/Combined.png);
   position: absolute;
   top: 61px;
   right: 0;
@@ -557,7 +557,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(/img/decor-elem/Vector.svg) center center no-repeat;
+  background: url(img/decor-elem/Vector.svg) center center no-repeat;
 }
 
 .radio__title {
