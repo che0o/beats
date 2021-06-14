@@ -15,14 +15,15 @@
 }
 
 .order-section {
-    background-color:  #181818;
+    background: url(../img/bgform.png) center top 50% / cover no-repeat;
+    object-fit: cover;
 }
 
 .section__title--color-white {
     color: #fff;
 }
 
-.section__map {
-    background: url(../../img/map.png) center center / cover no-repeat;
+.section-map {
+    background: url(../img/map.png) center center / cover no-repeat;
     object-fit: cover;
 }
