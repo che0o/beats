@@ -1,3 +1,21 @@
 .socials {
     display: flex;
 }
+
+.socials__items {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-icon {
+    width: rem(30px);
+    height: rem(30px);
+    fill: rgb(114, 110, 110);
+
+    &:hover {
+        fill: #000;
+    }
+}
