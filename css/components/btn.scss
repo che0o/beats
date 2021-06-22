@@ -1,9 +1,9 @@
 .btn {
     font-weight: bold;
-    padding: 18px 40px;
+    padding: rem(18px) rem(40px);
     text-transform: uppercase;
-    border-radius: 100px;
-    line-height: 1;
+    border-radius: rem(100px);
+    line-height: rem(18px);
     background: #E01F3D;
     text-decoration: none;
     color: #FFFFFF;
