@@ -498,6 +498,7 @@ img {
   margin-bottom: 0.9375rem;
   overflow: hidden;
   position: relative;
+  min-height: 21.75rem;
 }
 .reviews__display::before {
   content: "";
@@ -608,6 +609,23 @@ img {
           justify-content: center;
 }
 
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: -99999;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.reviews__item.active {
+  position: static;
+  left: 0;
+  opacity: 1;
+}
+
 .interactive-avatar {
   width: 4.625rem;
   height: 4.625rem;
@@ -617,6 +635,9 @@ img {
   position: relative;
 }
 .interactive-avatar--active {
+  border-color: #E01F3D;
+}
+.interactive-avatar:hover {
   border-color: #E01F3D;
 }
 
@@ -794,7 +815,7 @@ img {
 .fixed-menu {
   position: fixed;
   top: 40%;
-  right: 15%;
+  right: 3%;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {

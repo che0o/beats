@@ -14,6 +14,7 @@
     margin-bottom: rem(15px);
     overflow: hidden;
     position: relative;
+    min-height: rem(348px);
 
     &::before {
         content: "";
@@ -95,4 +96,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.reviews__item {
+    position: absolute;
+    top: 0;
+    left: -99999;
+    right: 0;
+    bottom: 0;
+    transition: all .8s;
+    opacity: 0;
+}
+
+.reviews__item.active {
+    position: static;
+    left: 0;
+    opacity: 1;
 }
