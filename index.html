@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Беспроводные наушники</title>
 </head>
@@ -286,6 +287,113 @@
                     </div>
                 </div>
             </section>
+            <section class="section team-section">
+                <div class="container">
+                    <div class="section__title">команда</div>
+                    <!-- desktop version -->
+                    <ul class="team team--version--desktop">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="img/team/boris.png" alt="photo" class="team__member--pic">
+                            </div>
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__content--title">Главный технолог</div>
+                                    <div class="team__content--desc">Отвечает за вкусовые качества и калорийность.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="img/team/alla.png" alt="photo" class="team__member--pic">
+                            </div>
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__content--title">Специалист по упаковке</div>
+                                    <div class="team__content--desc">Автор запоминающегося стиля наших батончиков.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="img/team/kirill.png" alt="photo" class="team__member--pic">
+                            </div>
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__content--title">Оператор</div>
+                                    <div class="team__content--desc">Разработал дизан наушников beats solo 3.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="img/team/mila.png" alt="photo" class="team__member--pic">
+                            </div>
+                            <button class="team__title" type="button">Мила Рыжкова</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__content--title">PR, маркетинг</div>
+                                    <div class="team__content--desc">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- mobile version -->
+                    <ul class="team team--version--mobile">
+                        <li class="team__item">
+                            <button class="team__title" type="button">Борис Федорович</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__member">
+                                        <img src="img/team/boris.png" alt="photo" class="team__member--pic">
+                                    </div>
+                                    <div class="team__content--title">Главный технолог</div>
+                                    <div class="team__content--desc">Отвечает за вкусовые качества и калорийность.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Алла Иванова</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__member">
+                                        <img src="img/team/alla.png" alt="photo" class="team__member--pic">
+                                    </div>
+                                    <div class="team__content--title">Специалист по упаковке</div>
+                                    <div class="team__content--desc">Автор запоминающегося стиля наших батончиков.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Кирилл Матросов</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__member">
+                                        <img src="img/team/kirill.png" alt="photo" class="team__member--pic">
+                                    </div>
+                                    <div class="team__content--title">Оператор</div>
+                                    <div class="team__content--desc">Разработал дизан наушников beats solo 3.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <button class="team__title" type="button">Мила Рыжкова</button>
+                            <div class="team__content">
+                                <div class="team__content--block">
+                                    <div class="team__member">
+                                        <img src="img/team/mila.png" alt="photo" class="team__member--pic">
+                                    </div>
+                                    <div class="team__content--title">PR, маркетинг</div>
+                                    <div class="team__content--desc">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="section">
                 <div class="container reviews__container">
                     <h2 class="section__title section__title--reviews">Отзывы</h2>
@@ -371,15 +479,16 @@
                 <div class="container container-form">
                     <h2 class="section__title section__title--color-white">закажите доставку</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="karim13.91@mail.ru">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -411,7 +520,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -469,6 +578,16 @@
             </footer>
         </div>
     </div>
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Cообщение отправлено
+            </div>
+            <div class="modal__button--container">
+                <a href="#" class="btn app-submit-btn">ЗАКРЫТЬ</a>
+            </div>
+        </div>
+    </div>
     <div class="overlay">
         <div class="overlay__menu">
             <nav class="menu menu-overlay">
@@ -498,9 +617,11 @@
         </ul>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/revievs-tabs.js"></script>
-    
+    <script src="scripts/acco.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
