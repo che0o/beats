@@ -24,13 +24,13 @@ function html() {
 }
 
 function js() {
-    return src('dev/scripts')
-        .pipe(dest('prod/'))
+    return src('dev/scripts/*.js')
+        .pipe(dest('prod/scripts/'))
 }
 
 function img() {
-    return src('dev/img')
-        .pipe(dest('prod/'))
+    return src('dev/img/*')
+        .pipe(dest('prod/img/'))
 }
 
 function watcher() {
