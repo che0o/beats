@@ -71,14 +71,14 @@
 .assortment__img {
     width: 50%;
     margin-right: rem(59px);
-    background: url(../img/decor/sliderheadphones.png) right center / 100% auto no-repeat;
+    background: url(img/decor/sliderheadphones.png) right center / 100% auto no-repeat;
 
     @include tablets {
         height: rem(310px);
         width: 100%;
         margin-right: 0;
         margin-bottom: 30px;
-        background: url(../img/decor/sliderheadphones.png) center center / 40% auto no-repeat;
+        background: url(img/decor/sliderheadphones.png) center center / 40% auto no-repeat;
     }
 }
 

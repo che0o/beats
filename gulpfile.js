@@ -29,7 +29,7 @@ function js() {
 }
 
 function img() {
-    return src('dev/img/*')
+    return src('dev/img/**/*')
         .pipe(dest('prod/img/'))
 }
 
