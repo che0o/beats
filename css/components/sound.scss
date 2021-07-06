@@ -1,0 +1,77 @@
+.sound {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &::before {
+        content: "";
+        width: 29px;
+        height: 3px;
+        background-color: $red;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%) rotate(42deg);
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &.active {
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+.sound__btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.sound__speak {
+    cursor: pointer;
+    width: rem(13px);
+    height: rem(16px);
+}
+
+.sound__volume {
+    display: flex;
+    align-items: center;
+    padding: 0 rem(20px) 0 rem(40px);
+}
+
+.sound__length {
+    width: 100%;
+    height: 4px;
+    
+    border-radius: 1px;
+    background: #333;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 0;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: $red;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    &::-moz-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background: $red;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+    }
+
+}

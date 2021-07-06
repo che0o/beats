@@ -1,0 +1,71 @@
+.product-menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.product-menu__item {
+    display: flex;
+}
+
+.product-menu__item:nth-child(1)  {
+    .product-menu__title {
+        background: #999999;
+    }
+}
+
+.product-menu__item:nth-child(2)  {
+    .product-menu__title {
+        background: #151515;
+    }
+}
+.product-menu__item:nth-child(3)  {
+    .product-menu__title {
+        background: #E01F3C;
+    }
+}
+
+
+
+.product-menu__title {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: rem(102px);
+    text-decoration: none;
+
+    @include phones {
+        width: rem(60px);
+    }
+    
+}
+
+.product-menu__text {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 36px;
+    padding-top: 34px;
+}
+
+
+.product-menu__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+
+
+.product-menu__content-text {
+    padding: rem(40px) rem(73px) rem(45px) rem(26px);
+}
+
+.product-menu-section__title {
+    position: absolute;
+    top: rem(115px);
+    left: rem(84px);
+}

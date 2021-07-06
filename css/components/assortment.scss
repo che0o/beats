@@ -1,0 +1,164 @@
+.container__assortment {
+    position: relative;
+
+    @include tablets {
+        
+    }
+}
+
+.assortment__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    @include tablets {
+        top: 29%;
+    }
+}
+
+.assortment__control--left {
+    left: -4%;
+
+    @include tablets {
+        left: 19%;
+    }
+}
+
+.assortment__control--right {
+    right: -4%;
+
+    @include tablets {
+        right: 19%;
+    }
+}
+
+.icon-arrow {
+    width: rem(14px);
+    height: rem(27px);
+}
+
+.assortment {
+    background-color: #F8FAF9;
+
+}
+
+.assortment__slider {
+    overflow: hidden;
+}
+
+.assortment__list {
+    display: flex;
+    position: relative;
+    will-change: right;
+    transition: right 0.3s;
+}
+
+.assortment__item {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.assortment__img {
+    width: 50%;
+    margin-right: rem(59px);
+    background: url(../img/decor/sliderheadphones.png) right center / 100% auto no-repeat;
+
+    @include tablets {
+        height: rem(310px);
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        background: url(../img/decor/sliderheadphones.png) center center / 40% auto no-repeat;
+    }
+}
+
+.assortment__content {
+    width: 50%;
+    
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.assortment__title {
+    font-weight: bold;
+    font-size: rem(36px);
+    line-height: rem(42px);
+    text-transform: uppercase;
+    margin-bottom: rem(24px);
+    @include tablets {
+        text-align: center;
+        
+    }
+}
+
+.assortment__text {
+    line-height: rem(19px);
+    color: #666;
+    max-width: rem(368px);
+    margin-bottom: rem(27px);
+    margin-right: 0;
+
+    @include tablets {
+        max-width: 100%;
+        padding: 0 9% 0 9%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.assortment__params {
+    display: flex;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.assortment__parameter {
+    margin-right: rem(90px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.assortment__key {
+    color: #666;
+    line-height: rem(19px);
+}
+
+.assortment__value {
+    color: #000;
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: rem(21px);
+}
+
+.assortment__footer {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.assortment__price {
+    font-size: rem(36px);
+    line-height: rem(60px);
+    text-transform: uppercase;
+    color: #151515;
+    margin-right: rem(13px);
+}

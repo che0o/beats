@@ -1,0 +1,65 @@
+.player-section {
+    background: #F8FAF9;
+    ;
+}
+
+.video__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: rem(662px);
+    height: rem(391px);
+    
+    @include tablets {
+        width: rem(594px);
+        height: rem(351px);
+    }
+
+    @include phones {
+        width: rem(394px);
+        height: rem(233px);
+    }
+}
+
+.player {
+    position: relative;
+    width: 100%;
+}
+
+.video__window {
+    // width: 100%;
+    // height: 100%;
+    display: block;
+}
+
+.player__start {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: rem(70px);
+    width: rem(48px);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &.active {
+        opacity: 0;
+    } 
+}
+
+.video__toolbar {
+    width: 100%;
+    height: rem(35px);
+    background: #151515;
+    display: flex;
+    flex-shrink: 0;
+    padding-left: rem(17px);
+}
