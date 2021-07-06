@@ -56,14 +56,12 @@
 }
 
 .fixed-menu__white {
-    .fixed-menu__item {
-        &--active {
-            .fixed-menu__link {
-                border-color: #fff;
-    
-                &::before {
-                    background: #fff;
-                }
+    .fixed-menu__item--active {
+        .fixed-menu__link {
+            border-color: #fff;
+
+            &::before {
+                background: #fff;
             }
         }
     }

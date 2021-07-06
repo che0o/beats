@@ -23,11 +23,19 @@ function html() {
         .pipe(dest('prod/'))
 }
 
+function js() {
+    return src('dev/scripts')
+        .pipe(dest('prod/'))
+}
+
+function img() {
+    return src('dev/img')
+        .pipe(dest('prod/'))
+}
 
 function watcher() {
     watch('dev/css/*.scss', css);
 }
 
 exports.clean = clean;
-exports.default = parallel(watcher, series(clean, css, html));
- 
+exports.default = parallel(watcher, series(clean, css, html, js, img));
