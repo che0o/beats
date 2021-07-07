@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./main.min.css">
+    <link rel="stylesheet" href="/prod/main.min.css">
     <title>Беспроводные наушники</title>
 </head>
 <body>
@@ -514,16 +514,15 @@
                     </div>
                 </div>
             </section>
-            <!-- <section data-sidemenu-theme="standart" data-section-id="video" class="section section__video">
+            <section data-sidemenu-theme="standart" data-section-id="video" class="section section__video">
                 <div class="container video__container">
                     <h2 class="section__title">как мы работаем</h2>
                     <div class="video__wrapper">
                         <div class="video__player">
-                            <div id="yt-player" class="video__window"></div>
-                            <video src="./src/video.mp4" id="player" class="video__window" poster="./img/decor/bgplayer.png">
+                            <video src="src/video.mp4" id="player" class="video__window" poster="./img/decor/bgplayer.png">
                             </video>
-                            <button class="video__player--img">
-                                <img src="./img/icons/play.svg" alt="play" class="video__play--pic play">
+                            <button class="video__player--img play">
+                                <img src="./img/icons/play.svg" alt="play" class="video__play--pic">
                             </button>
                         </div>
                         <div class="video__toolbar">
@@ -546,8 +545,8 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
-            <section class="section player-section">
+            </section>
+            <!-- <section class="section player-section">
                 <div class="container video__container">
                   <h2 class="section__title">Как мы работаем</h2>
                   <div class="player-section__container">
@@ -563,14 +562,16 @@
                           <button class="player__playback-button"></button>
                         </div>
                         <div class="player__duration">
-                          <span class="player__duration-completed">0:00</span> :
+                            <button class="sound__btn">
+                                <img src="./img/icons/speak.svg" alt="speaker" class="sound__speak">
+                            </button> :
                           <span class="player__duration-estimate">0:00</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> -->
             <section data-sidemenu-theme="white" data-section-id="order" class="section order-section">
                 <div class="container container-form">
                     <h2 class="section__title section__title--color-white">закажите доставку</h2>
@@ -653,6 +654,7 @@
             </section>
         </div>
     </div>
+    <div class="footer__wrap">
     <footer class="footer">
         <div class="container footer__container">
             <address class="contacts">
@@ -674,6 +676,7 @@
             </ul>
         </div>
     </footer>
+    </div>
     <div class="modal" id="modal">
         <div class="modal__container">
             <div class="modal__content">
@@ -725,7 +728,6 @@
     <script src="scripts/modal.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./scripts/map.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./scripts/player.js"></script>
 </body>
 </html>

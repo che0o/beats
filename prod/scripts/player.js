@@ -1,32 +1,29 @@
-let player;
-const playerContainer = $(".player");
-let eventsInit = () => {
-    $(".player__playback-button").click(e => {
-        e.preventDefault();
+let video;
+let durationControl;
+let soundControl;
+let intervalId;
 
-        const btn = $(e.currentTarget);
+const playBtn = document.querySelector(".video__player--img");
+const soundBtn = document.querySelector(".sound");
+const playerPlayBtn = document.querySelector(".duration__img");
 
-        playerContainer.addClass("paused");
-        player.playVideo();
-    });
+video = document.getElementById("player");
+
+video.addEventListener("click", playStop);
+
+let playButtons = document.querySelectorAll(".play");
+for (let i = 0; i < playButtons.length; i++) {
+    playButtons[i].addEventListener("click", playStop);
+    
 }
 
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('yt-player', {
-            height: '391',
-            width: '662',
-            videoId: 'H1FAMjuOozk',
-            events: {
-            // 'onReady': onPlayerReady,
-            // 'onStateChange': onPlayerStateChange
-            },
-            playerVars: {
-                controls: 0,
-                disablekb: 0,
-                showinfo: 0,
-                rel: 0,
-                autoplay: 0,
-                modestbranding: 0
-            }
-        });
-      }
+function playStop() {
+    playBtn.classList.toggle("active");
+    if (video.paused) {
+        video.play();
+        playerPlayBtn.classList.add("active");
+    } else {
+        video.pause();
+        playerPlayBtn.classList.remove("active");
+    }
+}

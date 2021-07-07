@@ -34,7 +34,9 @@ function img() {
 }
 
 function watcher() {
-    watch('dev/css/*.scss', css);
+    watch('dev/css/**/*.scss', css)
+    watch('dev/scripts/**/*.js', js)
+    watch('dev/index.html', html)
 }
 
 exports.clean = clean;

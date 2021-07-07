@@ -1,6 +1,5 @@
-.player-section {
+.section__video {
     background: #F8FAF9;
-    ;
 }
 
 .video__container {
@@ -10,7 +9,7 @@
     justify-content: center;
 }
 
-.player__wrapper {
+.video__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,18 +27,18 @@
     }
 }
 
-.player {
+.video__player {
     position: relative;
     width: 100%;
 }
 
 .video__window {
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100%;
     display: block;
 }
 
-.player__start {
+.video__player--img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -50,7 +49,7 @@
     background-color: transparent;
     border: none;
 
-    &.active {
+    .active {
         opacity: 0;
     } 
 }
