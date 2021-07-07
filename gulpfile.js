@@ -33,6 +33,11 @@ function img() {
         .pipe(dest('prod/img/'))
 }
 
+function video() {
+    return src('dev/src/**/*')
+        .pipe(dest('prod/src/'))
+}
+
 function watcher() {
     watch('dev/css/**/*.scss', css)
     watch('dev/scripts/**/*.js', js)
@@ -40,4 +45,4 @@ function watcher() {
 }
 
 exports.clean = clean;
-exports.default = parallel(watcher, series(clean, css, html, js, img));
+exports.default = parallel(watcher, series(clean, css, html, js, img, video));
