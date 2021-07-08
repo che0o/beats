@@ -81,6 +81,10 @@ const viewportScroller = () => {
 };
 
 $(window).on("wheel", e => {
+    if ($(e.target).parents('#mobile-menu').length !== 0) {
+        return;
+    }
+
     const deltaY = e.originalEvent.deltaY;
     const scroller = viewportScroller();
 

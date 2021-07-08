@@ -5,11 +5,11 @@
     
     &::before {
         content: "";
-        width: 29px;
-        height: 3px;
+        width: rem(25px);
+        height: rem(3px);
         background-color: $red;
         position: absolute;
-        left: 4px;
+        left: rem(-5px);
         top: 50%;
         transform: translateY(-50%) rotate(42deg);
         z-index: 2;

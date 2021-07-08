@@ -1,11 +1,20 @@
 .hero {
-    
     background-color: #F5F5F5;
     height: 100%;
     min-height: rem(650px);
     color: $black;
+    position: relative;
 
-    
+    &::after {
+        content: "";
+        height: rem(11px); 
+        width: rem(47px);
+        background: #C4C4C4;
+        position: absolute; 
+        right: 60px;
+        bottom: -5px;
+        transform: rotate(-45deg);
+    }
 }
 
 .hero__title-section {

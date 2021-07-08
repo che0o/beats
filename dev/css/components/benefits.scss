@@ -1,3 +1,21 @@
+.benefits__section {
+    position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0; 
+        height: 0;
+        bottom: -40px;
+        left: 64px;
+        transform: rotate(-45deg);
+        border-top: rem(34px) solid transparent;
+        border-right: rem(68px) solid #E01F3D;
+        border-bottom: rem(34px) solid transparent;
+        z-index: 1;
+    }
+}
+
 .benefits {
     display: flex;
 

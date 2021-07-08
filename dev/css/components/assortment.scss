@@ -43,6 +43,18 @@
 
 .assortment {
     background-color: #F8FAF9;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: rem(24px);
+	    height: rem(24px);
+	    background: #292929;
+        transform: rotate(45deg);
+        right: 64px;
+        bottom: -10px;
+    }
 
 }
 

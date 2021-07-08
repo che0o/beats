@@ -1,22 +1,12 @@
-$containerWidth: 915px;
-$baseFontSize: 16px;
-
-//breakpoints
-$tablets: 768px;
-$phones: 480px;
-
-//colors
-$red: #E01F3D;
-$grey: #666666;
-$black: #292929;
-
 @import "media";
+@import "vars";
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 @import "layout";
 
 //components
@@ -44,6 +34,7 @@ $black: #292929;
 @import "components/overlay";
 @import "components/team";
 @import "components/modal";
+@import "components/pentagon";
 @import "components/video";
 @import "components/duration";
 @import "components/sound";

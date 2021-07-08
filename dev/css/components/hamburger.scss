@@ -1,11 +1,12 @@
 .hamburger {
-    width: 24px;
+    width: 25px;
     height: 20px;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
     display: none;
-    z-index: 30;
+    z-index: 100;
+    cursor: pointer;
 
     @include tablets {
         display: inline-flex;
@@ -17,23 +18,26 @@
     background: $black;
     height: 5px;
     border-radius: 10px;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 
 
-.hamburger--active .hamburger__plank{
+.hamburger--active > .hamburger__plank {
     background: #fff;
+    z-index: 10000;
 
     &:first-child {
-        display: none;
+        transform: translateY(8px) translateX(2px) rotate(45deg);
+        transform-origin: center top;
     }
 
     &:nth-child(2) {
-        transform: rotate(45deg) translateY(11px);
+        opacity: 0;
     }
 
-    &:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10px);
+    &:last-child {
+        transform: translateY(-8px) translateX(2px) rotate(-45deg);
+        transform-origin: center bottom;
     }
 }
